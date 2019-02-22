@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>savecredentials</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+	var sys_id = gs.getUserID();
+	
+	var requestBody = request.body;
+	var requestData = requestBody.data;
+		
+	var username = requestData.username;
+	var password = requestData.password;
+	var stationPhoneNumber = requestData.stationPhoneNumber;
+	var businessUnitId = requestData.businessUnitId;
+
+	var gr = new GlideRecord(gs.getCurrentScopeName()+'_lynx_configuration');
+	gr.addQuery("sn_user",sys_id);
+	gr.query();
+	var count = gr.getRowCount();
+	if (count > 0) {
+		while (gr.next()) {
+			gr.username = username;
+			gr.password = password;
+			gr.station_number = stationPhoneNumber;
+			gr.business_unit_id = businessUnitId;
+			gr.update();
+			response.setBody({"status":"User credentials updated"});
+		}
+	}else{
+		gr = new GlideRecord(gs.getCurrentScopeName()+'_lynx_configuration');
+		gr.initialize(); 
+		gr.username = username;
+		gr.password = password;
+		gr.station_number = stationPhoneNumber;
+		gr.business_unit_id = businessUnitId;
+		gr.sn_user = sys_id;
+		gr.insert();
+		response.setBody({"status":"User credentials inserted"});
+	}
+	
+	
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_241495_myapplica/lynxservice/savecredentials</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/savecredentials</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-20 05:53:14</sys_created_on>
+        <sys_id>6ef4ea24db3323008596d426ca96196f</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>savecredentials</sys_name>
+        <sys_package display_value="MyApplication" source="x_241495_myapplica">f89bfca1db1223008596d426ca961984</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MyApplication">f89bfca1db1223008596d426ca961984</sys_scope>
+        <sys_update_name>sys_ws_operation_6ef4ea24db3323008596d426ca96196f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-21 10:39:43</sys_updated_on>
+        <web_service_definition display_value="lynxservice">1c11a2e0db3323008596d426ca961934</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

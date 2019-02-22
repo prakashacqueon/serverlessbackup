@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>true</direct>
+        <endpoint>x_241495_myapplica_index.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	
+	<g:evaluate object="true">
+	  var g_ck = gs.getSession().getSessionToken();
+		var app_scope = gs.getCurrentScopeName();
+	</g:evaluate>
+	<script>
+	  window.g_ck = "$[g_ck]";
+		window.app_scope = "$[app_scope]";
+	</script>
+	
+	<base href="/${gs.getMessage(gs.getCurrentScopeName())}_index.do/"/>
+	
+	<!--fonts-->
+<link href="/1c4cb025db1223008596d426ca96195f.cssdbx" rel="stylesheet" type="text/css"></link>	
+	<!--vendor.min-->
+<link href="/3cae70a1db1223008596d426ca96195a.cssdbx" rel="stylesheet" type="text/css"></link>
+	<!--styles.min-->
+<link href="/e3ce78e1db1223008596d426ca961982.cssdbx" rel="stylesheet" type="text/css"></link>
+	<!--bootstrap-datepicker.min-->
+<link href="/07eefca1db1223008596d426ca96198b.cssdbx" rel="stylesheet" type="text/css"></link>
+	<!--bootstrap-timepicker.min-->
+<link href="/411ffca1db1223008596d426ca96198e.cssdbx" rel="stylesheet" type="text/css"></link>
+	
+	<g:requires name="${gs.getMessage(gs.getCurrentScopeName())}.liga.jsdbx" />
+	<g:requires name="${gs.getMessage(gs.getCurrentScopeName())}.tether.min.jsdbx" />
+	<g:requires name="${gs.getMessage(gs.getCurrentScopeName())}.compressed.jsdbx" />
+	<g:requires name="${gs.getMessage(gs.getCurrentScopeName())}.openFrameAPI.jsdbx" />
+	<g:requires name="${gs.getMessage(gs.getCurrentScopeName())}.appconfig.jsdbx" />
+	
+	<App><span class="pre-loader"/></App>
+	
+	<g:requires name="${gs.getMessage(gs.getCurrentScopeName())}.polyfill.jsdbx" />
+	<g:requires name="${gs.getMessage(gs.getCurrentScopeName())}.vendor4.jsdbx" />
+	<g:requires name="${gs.getMessage(gs.getCurrentScopeName())}.vendor3.jsdbx" />
+	<g:requires name="${gs.getMessage(gs.getCurrentScopeName())}.vendor2.jsdbx" />
+	<g:requires name="${gs.getMessage(gs.getCurrentScopeName())}.vendor1.jsdbx" />
+	<g:requires name="${gs.getMessage(gs.getCurrentScopeName())}.vendor.jsdbx" />
+	<g:requires name="${gs.getMessage(gs.getCurrentScopeName())}.app.jsdbx" />
+	
+</j:jelly>]]></html>
+        <name>index</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-06 11:04:22</sys_created_on>
+        <sys_id>417563c0dba323008596d426ca96198a</sys_id>
+        <sys_mod_count>79</sys_mod_count>
+        <sys_name>index</sys_name>
+        <sys_package display_value="MyApplication" source="x_241495_myapplica">f89bfca1db1223008596d426ca961984</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MyApplication">f89bfca1db1223008596d426ca961984</sys_scope>
+        <sys_update_name>sys_ui_page_417563c0dba323008596d426ca96198a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-21 09:20:14</sys_updated_on>
+    </sys_ui_page>
+</record_update>

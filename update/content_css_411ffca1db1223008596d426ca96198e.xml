@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="content_css">
+    <content_css action="INSERT_OR_UPDATE">
+        <name>bootstrap-timepicker.min.css</name>
+        <style>/*!&#13;
+ * Timepicker Component for Twitter Bootstrap&#13;
+ *&#13;
+ * Copyright 2013 Joris de Wit&#13;
+ *&#13;
+ * Contributors https://github.com/jdewit/bootstrap-timepicker/graphs/contributors&#13;
+ *&#13;
+ * For the full copyright and license information, please view the LICENSE&#13;
+ * file that was distributed with this source code.&#13;
+ */.bootstrap-timepicker{position:relative}.bootstrap-timepicker.pull-right .bootstrap-timepicker-widget.dropdown-menu{left:auto;right:0}.bootstrap-timepicker.pull-right .bootstrap-timepicker-widget.dropdown-menu:before{left:auto;right:12px}.bootstrap-timepicker.pull-right .bootstrap-timepicker-widget.dropdown-menu:after{left:auto;right:13px}.bootstrap-timepicker .input-group-addon{cursor:pointer}.bootstrap-timepicker .input-group-addon i{display:inline-block;width:16px;height:16px}.bootstrap-timepicker-widget.dropdown-menu{padding:4px}.bootstrap-timepicker-widget.dropdown-menu.open{display:inline-block}.bootstrap-timepicker-widget.dropdown-menu:before{border-bottom:7px solid rgba(0,0,0,0.2);border-left:7px solid transparent;border-right:7px solid transparent;content:"";display:inline-block;position:absolute}.bootstrap-timepicker-widget.dropdown-menu:after{border-bottom:6px solid #fff;border-left:6px solid transparent;border-right:6px solid transparent;content:"";display:inline-block;position:absolute}.bootstrap-timepicker-widget.timepicker-orient-left:before{left:6px}.bootstrap-timepicker-widget.timepicker-orient-left:after{left:7px}.bootstrap-timepicker-widget.timepicker-orient-right:before{right:6px}.bootstrap-timepicker-widget.timepicker-orient-right:after{right:7px}.bootstrap-timepicker-widget.timepicker-orient-top:before{top:-7px}.bootstrap-timepicker-widget.timepicker-orient-top:after{top:-6px}.bootstrap-timepicker-widget.timepicker-orient-bottom:before{bottom:-7px;border-bottom:0;border-top:7px solid #999}.bootstrap-timepicker-widget.timepicker-orient-bottom:after{bottom:-6px;border-bottom:0;border-top:6px solid #fff}.bootstrap-timepicker-widget a.btn,.bootstrap-timepicker-widget input{border-radius:4px}.bootstrap-timepicker-widget table{width:100%;margin:0}.bootstrap-timepicker-widget table td{text-align:center;height:30px;margin:0;padding:2px}.bootstrap-timepicker-widget table td:not(.separator){min-width:30px}.bootstrap-timepicker-widget table td span{width:100%}.bootstrap-timepicker-widget table td a{border:1px transparent solid;width:100%;display:inline-block;margin:0;padding:8px 0;outline:0;color:#333}.bootstrap-timepicker-widget table td a:hover{text-decoration:none;background-color:#eee;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;border-color:#ddd}.bootstrap-timepicker-widget table td a i{margin-top:2px;font-size:18px}.bootstrap-timepicker-widget table td input{width:25px;margin:0;text-align:center}.bootstrap-timepicker-widget .modal-content{padding:4px}@media(min-width:767px){.bootstrap-timepicker-widget.modal{width:200px;margin-left:-100px}}@media(max-width:767px){.bootstrap-timepicker{width:100%}.bootstrap-timepicker .dropdown-menu{width:100%}}</style>
+        <sys_class_name>content_css</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-12-10 11:24:08</sys_created_on>
+        <sys_id>411ffca1db1223008596d426ca96198e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>bootstrap-timepicker.min.css</sys_name>
+        <sys_package display_value="MyApplication" source="x_241495_myapplica">f89bfca1db1223008596d426ca961984</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MyApplication">f89bfca1db1223008596d426ca961984</sys_scope>
+        <sys_update_name>content_css_411ffca1db1223008596d426ca96198e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-07 09:57:39</sys_updated_on>
+        <type>local</type>
+        <url/>
+    </content_css>
+</record_update>

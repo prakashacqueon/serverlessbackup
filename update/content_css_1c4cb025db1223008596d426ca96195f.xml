@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="content_css">
+    <content_css action="INSERT_OR_UPDATE">
+        <name>fonts.css</name>
+        <style>@font-face {&#13;
+    font-family: 'open_sansbold';&#13;
+    src: url('/sys_attachment.do?sys_id=684baa54db3363008596d426ca961969');&#13;
+    src: url('/sys_attachment.do?sys_id=684baa54db3363008596d426ca961969?#iefix')format('embedded-opentype'), url('/sys_attachment.do?sys_id=c03baa54db3363008596d426ca961965')format('woff'), url('/sys_attachment.do?sys_id=fc4ba294db3363008596d426ca9619d7')format('truetype'), url('/sys_attachment.do?sys_id=7c4baa54db3363008596d426ca96196c#open_sansbold')format('svg');&#13;
+    font-weight: normal;&#13;
+    font-style: normal;&#13;
+}&#13;
+&#13;
+&#13;
+@font-face {&#13;
+    font-family: 'sf-lightning';&#13;
+    src:  url('/sys_attachment.do?sys_id=898068c0db3323008596d426ca961968') format('woff');&#13;
+    font-weight: normal;&#13;
+    font-style: normal;&#13;
+  }&#13;
+</style>
+        <sys_class_name>content_css</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-12-10 11:21:18</sys_created_on>
+        <sys_id>1c4cb025db1223008596d426ca96195f</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>fonts.css</sys_name>
+        <sys_package display_value="MyApplication" source="x_241495_myapplica">f89bfca1db1223008596d426ca961984</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MyApplication">f89bfca1db1223008596d426ca961984</sys_scope>
+        <sys_update_name>content_css_1c4cb025db1223008596d426ca96195f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-21 11:19:55</sys_updated_on>
+        <type>local</type>
+        <url/>
+    </content_css>
+</record_update>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <global>false</global>
+        <name>x_241495_myapplica.appconfig</name>
+        <script><![CDATA[window['DialerConfig'] = {
+    "InboundDefaultTab": "var",
+	"IsInlineDeployment": true, //true : if deployed as package inside servicenow
+                                //false : if deplyed in separate server
+
+    "LoggerSetting": {
+        'level': 2,
+        'isConsoleAppender': true,
+        'isAPIAppender': true,
+        'maxLine': 3
+    },
+
+    "tokenUri": "https://api-tc1.ucnlabext.com/InContactAuthorizationServer/Token",
+    "applicationName": "srvtest2",
+    "vendorName": "srv2",
+    "apiVersion": "v12.0",
+    "requestingAPIs": "AdminApi AgentApi AuthenticationApi RealTimeApi",
+
+    "nextCallActions": {
+        "Incoming": ["ANSWER"],
+        "Active": ["HOLD","DROP","CONSULT_CALL"],
+        "Holding": ["RETRIEVE","CONSULT_CALL"],
+        "Dialing": ["DROP"]
+    },
+    "nextConsultActions": {
+        "Ringing": ["CONSULT_ACCEPT"],
+        "IN_Active": ["HOLD","DROP"],
+        "OUT_Active": ["HOLD","DROP","CONFERENCE","TRANSFER"],
+        "Joined": ["END_CONFERENCE","TRANSFER"]
+    },
+
+    "callStates": {
+        "InboundContact" : "Talking",
+        "OutboundContact" : "Dialing"
+    },
+    //DNIS:call_variable_name. If dnis is not included, search will be based on ANI
+    "searchConfig":{
+        "67890": "incident_number"
+    },
+    "callvariableField":"ScreenPopUrlVariables" // call variable array field name
+};
+
+//For ServiceNow- Added by Prakash
+window['SNConfig'] = {
+    "ServiceNowDomainUrl": "https://dev71170.service-now.com",
+    "openUserPageForNewUser": false, //opens incident form if false or user form if true when search is by ANI
+    "hideAgentDesktopAfterCall": false, //hides agent desktop after attending call
+    "hideAgentDesktopAfterIncidentSelect": false //hides agent desktop after incident url is clicked
+};]]></script>
+        <script_name>appconfig</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-12-10 11:28:16</sys_created_on>
+        <sys_id>f1df30a5db1223008596d426ca9619ce</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>x_241495_myapplica.appconfig</sys_name>
+        <sys_package display_value="MyApplication" source="x_241495_myapplica">f89bfca1db1223008596d426ca961984</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MyApplication">f89bfca1db1223008596d426ca961984</sys_scope>
+        <sys_update_name>sys_ui_script_f1df30a5db1223008596d426ca9619ce</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-21 09:26:26</sys_updated_on>
+        <ui_type>0</ui_type>
+        <use_scoped_format>false</use_scoped_format>
+    </sys_ui_script>
+</record_update>

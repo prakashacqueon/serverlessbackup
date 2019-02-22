@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category/>
+        <format>png</format>
+        <height>13</height>
+        <image>cad7f5f5dbe323008596d426ca961902</image>
+        <name>icon-lock.png</name>
+        <size_bytes>1090</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-11 13:28:43</sys_created_on>
+        <sys_id>eac739f5dbe323008596d426ca96191d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>icon-lock.png</sys_name>
+        <sys_package display_value="MyApplication" source="x_241495_myapplica">f89bfca1db1223008596d426ca961984</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MyApplication">f89bfca1db1223008596d426ca961984</sys_scope>
+        <sys_update_name>db_image_eac739f5dbe323008596d426ca96191d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-11 13:28:53</sys_updated_on>
+        <thumbnail/>
+        <width>10</width>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#0</average_image_color>
+        <chunk_size_bytes>734003</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>image</file_name>
+        <image_height>13</image_height>
+        <image_width>10</image_width>
+        <size_bytes>1090</size_bytes>
+        <size_compressed>768</size_compressed>
+        <state/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-11 13:28:53</sys_created_on>
+        <sys_id>cad7f5f5dbe323008596d426ca961902</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-11 13:28:53</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>eac739f5dbe323008596d426ca96191d</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="cad7f5f5dbe323008596d426ca961902">cad7f5f5dbe323008596d426ca961902</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-11 13:28:53</sys_created_on>
+        <sys_id>0ed7f5f5dbe323008596d426ca961902</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>fVNNaBNBFF5TraVYLaj1B6XjKtqq2b/86C5NbXaT2kBTahppjt3sTtKl7s52d2q2RewPCP4crF4U9aJUVARR9KbgRaGCiEf1oha8eJGCoCJUZ9OmihCHYea9x/e9efPmmzO9PYcb6rfWUxTVkOpKZMhetutqyTp94Ncqsm3ByRzuQwVcUh1IxXWUhyBlqkWYgao+OvwCtlFUTYuRzeFculvSkMmoPobxTJvyR9shz1a1IYhBHhYNK0Z/efyUBoYeo/sjaS5tK3DQ6BpzYN9YT1YbG9JEnT7UDto8iSQwIVaBZx6zXMmL0eW8ErH9MEuDMgQPxejFonLpXqAgB4IIEw1qfEgAB0SGj4jCwfB+IHB8lOXCLC8G+ZBEZpgDS4Mmpzl6QcokOpfOIl6MHsTYlli2VCoxpRCDnCLhiiLLCawgBAki6I5aWPWClruzkiEBXc0xbGwgC/i+mkcjOEbTlSuY9nJay11qE2kY66k2yzMc+xcwnf4/1DSX0S7OwML/0W521IZsBrpoxNHIwxV2+mRbUhyoYuRkETpW6WLvIMLIHUQ2UBS/axEmAlr6DUtHJbe1zEqnpZTlYtXSYCoRo0mEMQxdCkd4LhzpTIhcROb5ZFROcqKSFJIhOaQoUVmucBNIGzGhhStc/Q83WZXrC2KRDR3jONQ7HWSC8sUlo3otcvVaFrl69VqUqlyWFMP+89yVENGQby6LlzjL8ocW0bxDxF18MvOTfIz7qUQ8673Lh6PRwkSgHRyvyR8FC+uelSa8TY3jgZQQ3zhMDQcaf1FzPzraNp0el5+/iddfvjkz0/FIbHQD81vBQuDZ+4nvTY13lYbRNaEja043cwNTP3vF2qbpOx0v66F7o3XlmQeT12brvna3T++YnWh+Upzc+3n13PmDG+Zrhnesr7lAXZVXtOy+/XrzWf7EqbULAw+vrGotnIy/vXU9vOfittzHfeDVrg+X+qkVtdT2b1vOdQufAv6vTiV7Evfkganf5zBhPkIEAAA=</data>
+        <length>1012</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="cad7f5f5dbe323008596d426ca961902">cad7f5f5dbe323008596d426ca961902</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-11 13:28:53</sys_created_on>
+        <sys_id>8ed7f5f5dbe323008596d426ca961902</sys_id>
+    </sys_attachment_doc>
+</record_update>

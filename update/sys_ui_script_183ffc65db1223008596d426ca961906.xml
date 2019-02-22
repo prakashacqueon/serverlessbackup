@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <global>false</global>
+        <name>x_241495_myapplica.liga</name>
+        <script><![CDATA[/* A polyfill for browsers that don't support ligatures. */
+/* The script tag referring to this file must be placed before the ending body tag. */
+
+/* To provide support for elements dynamically added, this script adds
+   method 'icomoonLiga' to the window object. You can pass element references to this method.
+*/
+(function () {
+    'use strict';
+    function supportsProperty(p) {
+        var prefixes = ['Webkit', 'Moz', 'O', 'ms'],
+            i,
+            div = document.createElement('div'),
+            ret = p in div.style;
+        if (!ret) {
+            p = p.charAt(0).toUpperCase() + p.substr(1);
+            for (i = 0; i < prefixes.length; i += 1) {
+                ret = prefixes[i] + p in div.style;
+                if (ret) {
+                    break;
+                }
+            }
+        }
+        return ret;
+    }
+    var icons;
+    if (!supportsProperty('fontFeatureSettings')) {
+        icons = {
+            'home': '&#xb09;',
+            'house': '&#xb09;',
+          '0': 0
+        };
+        delete icons['0'];
+        window.icomoonLiga = function (els) {
+            var classes,
+                el,
+                i,
+                innerHTML,
+                key;
+            els = els || document.getElementsByTagName('*');
+            if (!els.length) {
+                els = [els];
+            }
+            for (i = 0; ; i += 1) {
+                el = els[i];
+                if (!el) {
+                    break;
+                }
+                classes = el.className;
+                if (/icon-/.test(classes)) {
+                    innerHTML = el.innerHTML;
+                    if (innerHTML && innerHTML.length > 1) {
+                        for (key in icons) {
+                            if (icons.hasOwnProperty(key)) {
+                                innerHTML = innerHTML.replace(new RegExp(key, 'g'), icons[key]);
+                            }
+                        }
+                        el.innerHTML = innerHTML;
+                    }
+                }
+            }
+        };
+        window.icomoonLiga();
+    }
+}());
+]]></script>
+        <script_name>liga</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-12-10 11:24:57</sys_created_on>
+        <sys_id>183ffc65db1223008596d426ca961906</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_241495_myapplica.liga</sys_name>
+        <sys_package display_value="MyApplication" source="x_241495_myapplica">f89bfca1db1223008596d426ca961984</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MyApplication">f89bfca1db1223008596d426ca961984</sys_scope>
+        <sys_update_name>sys_ui_script_183ffc65db1223008596d426ca961906</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-12-10 11:24:57</sys_updated_on>
+        <ui_type>0</ui_type>
+        <use_scoped_format>false</use_scoped_format>
+    </sys_ui_script>
+</record_update>

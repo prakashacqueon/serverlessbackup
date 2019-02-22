@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>GET</http_method>
+        <name>getappconfig</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    var result = {};
+	result.token_uri = gs.getProperty(gs.getCurrentScopeName()+'.token_uri');
+	result.appname = gs.getProperty(gs.getCurrentScopeName()+'.incontact_appname');
+	result.vendorname = gs.getProperty(gs.getCurrentScopeName()+'.incontact_vendor');
+	result.dnissearch = "{"+gs.getProperty(gs.getCurrentScopeName()+'.dnis_search')+"}";
+	
+	response.setBody(result);
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_241495_myapplica/lynxservice/getappconfig</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/getappconfig</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-20 09:58:14</sys_created_on>
+        <sys_id>c44d1328dbf323008596d426ca9619e4</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>getappconfig</sys_name>
+        <sys_package display_value="MyApplication" source="x_241495_myapplica">f89bfca1db1223008596d426ca961984</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MyApplication">f89bfca1db1223008596d426ca961984</sys_scope>
+        <sys_update_name>sys_ws_operation_c44d1328dbf323008596d426ca9619e4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-21 10:38:14</sys_updated_on>
+        <web_service_definition display_value="lynxservice">1c11a2e0db3323008596d426ca961934</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

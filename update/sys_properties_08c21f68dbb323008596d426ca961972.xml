@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Incontact Token URL</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_241495_myapplica.token_uri</name>
+        <read_roles/>
+        <suffix>token_uri</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-20 09:15:16</sys_created_on>
+        <sys_id>08c21f68dbb323008596d426ca961972</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_241495_myapplica.token_uri</sys_name>
+        <sys_package display_value="MyApplication" source="x_241495_myapplica">f89bfca1db1223008596d426ca961984</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MyApplication">f89bfca1db1223008596d426ca961984</sys_scope>
+        <sys_update_name>sys_properties_08c21f68dbb323008596d426ca961972</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-20 09:41:11</sys_updated_on>
+        <type>string</type>
+        <value>https://api-tc4.ucnlabext.com/InContactAuthorizationServer/Token</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=08c21f68dbb323008596d426ca961972"/>
+</record_update>

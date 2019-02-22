@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[function loadPhoneNumbers(phone_fields,phone_labels, recSysId){ 
+	var labels = $j('.phone_number_selector .labels');
+	var values = $j('.phone_number_selector .values');
+	var labelArr = phone_labels.split(',');
+	var fieldArr = phone_fields.split(',');
+	for(var i=0; i < labelArr.length; i++) {
+		var e = '<div style="padding-bottom:10px;text-transform: capitalize"><span style="padding-right:10px; width:50%;">'+labelArr[i].replace(new RegExp("_", 'g')," ")+':</span></div>';
+		var v = '<div style="padding-bottom:10px;"><a style="color: #278efc;width:50%" onclick="numberClicked(this)" id="'+recSysId+'">'+fieldArr[i]+'</a></div>';
+		
+		labels.append(e);
+		values.append(v);
+	}
+}
+
+function numberClicked(element) {
+	CustomEvent.fireTop('cti_phone_number_selected_'+element.id, element.text);
+}]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_241495_myapplica_lynx_phone_selector.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="jelly:core" xmlns:g2="glide">
+
+	<j:set var="jvar_phone_fields" value="${sysparm_fields}"/>
+	<j:set var="jvar_phone_labels" value="${sysparm_labels}"/>
+	<j:set var="jvar_ref_sys_id" value="${sysparm_sysid}"/>
+	
+<div class="phone_number_selector">
+	<div class="labels" style="width:40%;float:left"></div>
+	<div class="values"></div>
+</div>
+	<script>
+		addLoadEvent(function () {
+			loadPhoneNumbers('${jvar_phone_fields}','${jvar_phone_labels}', '${jvar_ref_sys_id}');
+		});
+	</script>
+</j:jelly>]]></html>
+        <name>lynx_phone_selector</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-19 06:40:34</sys_created_on>
+        <sys_id>25c6edd8db3f23008596d426ca961929</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>lynx_phone_selector</sys_name>
+        <sys_package display_value="MyApplication" source="x_241495_myapplica">f89bfca1db1223008596d426ca961984</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MyApplication">f89bfca1db1223008596d426ca961984</sys_scope>
+        <sys_update_name>sys_ui_page_25c6edd8db3f23008596d426ca961929</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 06:40:34</sys_updated_on>
+    </sys_ui_page>
+</record_update>

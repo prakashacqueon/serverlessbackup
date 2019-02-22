@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Search Variable for DNIS ("DNIS_1": "VARIABLE_NAME", "DNIS_2": "VARIABLE_NAME"). If dnis is not included, search will be based on ANI</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_241495_myapplica.dnis_search</name>
+        <read_roles/>
+        <suffix>dnis_search</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-20 09:50:11</sys_created_on>
+        <sys_id>53ea1724dbf323008596d426ca9619ac</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_241495_myapplica.dnis_search</sys_name>
+        <sys_package display_value="MyApplication" source="x_241495_myapplica">f89bfca1db1223008596d426ca961984</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MyApplication">f89bfca1db1223008596d426ca961984</sys_scope>
+        <sys_update_name>sys_properties_53ea1724dbf323008596d426ca9619ac</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-21 09:25:47</sys_updated_on>
+        <type>string</type>
+        <value>"67890": "incident_number"</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=53ea1724dbf323008596d426ca9619ac"/>
+</record_update>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>active</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>LynxIncidentSelect</name>
+        <order/>
+        <script><![CDATA[function onLoad(){
+		console.log("SELECTED INCIDENT INLINE : " + g_form.getValue('number'));
+		console.log("SELECTED INCIDENT INLINE : " + g_form.getUniqueValue());
+	
+		var data={"number":g_form.getValue('number'),"sysid":g_form.getUniqueValue()};
+	
+		var payload = {"type": "UI_INCIDENT_SELECT", "data" : data};
+		var context = {"payload": payload, "method" : "openframe_communication" };
+		CustomEvent.fireAll("openframe_request", context);
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-19 06:43:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>44a7e51cdb3f23008596d426ca9619f7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>LynxIncidentSelect</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="MyApplication" source="x_241495_myapplica">f89bfca1db1223008596d426ca961984</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MyApplication">f89bfca1db1223008596d426ca961984</sys_scope>
+        <sys_update_name>sys_script_client_44a7e51cdb3f23008596d426ca9619f7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-21 09:37:54</sys_updated_on>
+        <table>incident</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Lynx Configuration" max_length="40" name="x_241495_myapplica_lynx_configuration" type="collection">
+        <element label="Business Unit ID" max_length="50" name="business_unit_id" type="string"/>
+        <element label="Password" max_length="255" name="password" type="password2"/>
+        <element label="SN User" max_length="32" name="sn_user" reference="sys_user" type="reference"/>
+        <element label="Station Number" max_length="10" name="station_number" type="string"/>
+        <element label="Username" max_length="50" name="username" type="string"/>
+        <index name="index">
+            <element name="sn_user"/>
+        </index>
+    </element>
+</database>
