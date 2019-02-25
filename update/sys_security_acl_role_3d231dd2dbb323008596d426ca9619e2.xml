@@ -2,17 +2,17 @@
     <sys_security_acl_role action="INSERT_OR_UPDATE">
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-02-21 13:26:57</sys_created_on>
-        <sys_id>23c61d81db3723008596d426ca9619bd</sys_id>
+        <sys_created_on>2019-02-25 10:21:26</sys_created_on>
+        <sys_id>3d231dd2dbb323008596d426ca9619e2</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>.sn_openframe_user</sys_name>
+        <sys_name>db_image.sn_openframe_user</sys_name>
         <sys_package display_value="MyApplication" source="x_241495_myapplica">f89bfca1db1223008596d426ca961984</sys_package>
         <sys_policy/>
         <sys_scope display_value="MyApplication">f89bfca1db1223008596d426ca961984</sys_scope>
-        <sys_security_acl display_value="db_image">dac69d0ddb3723008596d426ca9619be</sys_security_acl>
-        <sys_update_name>sys_security_acl_role_23c61d81db3723008596d426ca9619bd</sys_update_name>
+        <sys_security_acl display_value="db_image">7142d9d2dbb323008596d426ca961908</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_3d231dd2dbb323008596d426ca9619e2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-02-21 13:26:57</sys_updated_on>
+        <sys_updated_on>2019-02-25 10:21:26</sys_updated_on>
         <sys_user_role display_value="sn_openframe_user" name="sn_openframe_user">7506fe2deb2002003e97afcef106fe87</sys_user_role>
         <transaction_id/>
     </sys_security_acl_role>
