@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>GET</http_method>
+        <name>updatedictionary</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+// 	var dic = new GlideRecord('sys_dictionary');
+// 	dic.addQuery('name','incident');
+// 	dic.addQuery('element','caller_id');
+// 	// dic.setWorkflow(false);
+// 	// dic.autoSysFields(false);
+// 	dic.query();
+// 	if(dic.next())
+// 	{
+// 		var result = {};
+// 		result['attributes'] = dic.attributes;
+// 		dic.attributes = dic.attributes + ";new_attr";
+// 		dic.update();
+// 		response.setBody(result);
+// 	}
+	gs.setProperty('glide.ui.activity.email_roles','itil,newrole');
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_241495_myapplica/lynxservice/updatedictionary</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/updatedictionary</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-26 06:33:43</sys_created_on>
+        <sys_id>5578a9e6db3323008596d426ca9619ab</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>updatedictionary</sys_name>
+        <sys_package display_value="MyApplication" source="x_241495_myapplica">f89bfca1db1223008596d426ca961984</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MyApplication">f89bfca1db1223008596d426ca961984</sys_scope>
+        <sys_update_name>sys_ws_operation_5578a9e6db3323008596d426ca9619ab</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-26 11:34:31</sys_updated_on>
+        <web_service_definition display_value="lynxservice">1c11a2e0db3323008596d426ca961934</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>
